@@ -16,3 +16,12 @@ def submit_obituary(request):
         )
         return redirect('view_obituaries')
     return render(request, 'obituary_form.html')
+
+
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('submit_obituary/', views.submit_obituary, name='submit_obituary'),
+]
+
