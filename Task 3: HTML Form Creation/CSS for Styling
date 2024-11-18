@@ -1,0 +1,25 @@
+form {
+    max-width: 600px;
+    margin: auto;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+}
+
+input[type="submit"] {
+    width: auto;
+    padding: 0.7em;
+    border: 1px solid #4CAF50;
+    border-radius: 1em;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
