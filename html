@@ -1,14 +1,11 @@
-<form method="POST" action="{% url 'submit_obituary' %}">
+
+<form method="post" action="{% url 'submit_obituary' %}">
     {% csrf_token %}
-    <label>Name:</label>
-    <input type="text" name="name" required>
-    <label>Date of Birth:</label>
-    <input type="date" name="date_of_birth" required>
-    <label>Date of Death:</label>
-    <input type="date" name="date_of_death" required>
-    <label>Content:</label>
-    <textarea name="content" required></textarea>
-    <label>Author:</label>
-    <input type="text" name="author" required>
-    <button type="submit">Submit</button>
+    <input type="text" name="name" placeholder="Name" required><br>
+    <input type="date" name="date_of_birth" required><br>
+    <input type="date" name="date_of_death" required><br>
+    <textarea name="content" placeholder="Content" required></textarea><br>
+    <input type="text" name="author" placeholder="Author" required><br>
+    <input type="submit" value="Submit">
 </form>
+
